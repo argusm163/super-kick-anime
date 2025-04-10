@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #a2d2ff, #bde0fe);
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.pixabay.com/photo/2015/07/02/10/28/football-828726_1280.jpg') center/cover no-repeat;
+}
+
+.scoreboard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.goal {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Soccer_goal_icon.png') center/contain no-repeat;
+  background-size: contain;
+}
+
+.ball {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Soccerball.svg') center/contain no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 10;
+}
